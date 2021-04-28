@@ -1,0 +1,42 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+}
+
+div.full-body {
+    width: 100%;
+    height: 100%;
+    background: rgb(132, 49, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    position: relative;
+    height: 0px;
+    width: 0px;
+    border-bottom: 160px solid black;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+.star::before {
+    content: "";
+    position: absolute;
+    left: -100px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-top: 160px solid black;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
